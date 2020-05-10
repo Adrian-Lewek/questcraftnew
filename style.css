@@ -8,15 +8,16 @@
     margin: 0 auto;    
     width: 1500px;
     height: 100px;
-    
 }
 .logo{
     width: 50%;
     float: left;
     margin-top: 15px;
+    user-select: none;
 }
 .logo img{
     float: left;
+    border-radius: 10px;
 }
 .logo h1{
     margin: 11px 0 0 80px;
@@ -53,6 +54,9 @@
     color: black;
     transition: 0.35s;
 }
+.menu{
+    display: none;
+}
 .nav .active{ 
     background-color: rgb(53, 199, 53); 
     color: white;
@@ -67,11 +71,12 @@
 }
 .main-img{
     height: 300px;
-    background-image: url("img/Screenshot_3.png");
+    background-image: url("img/Screenshot_3\ —\ blur.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(3px);
+    
+
 }
 .center{
     position: absolute;
@@ -79,7 +84,7 @@
     left: 50%;
     top: 250px;
     transform: translate(-50%, -50%);
-
+    user-select: none;
 }
 .title{
     color: white;
@@ -98,4 +103,95 @@
 .typed-cursor{
     color: white;
     font-size: 25px;
+}
+@media only screen and (max-width: 1501px){
+    .nav-bar{  
+        width: 90%;
+        height: 100px;
+    }
+    .logo{
+        width: 260px;
+    }
+    .nav{
+        width: auto;
+        float: right;
+    }
+}
+@media only screen and (max-width: 1201px){
+    .menu{
+        display: block;
+        float: right;
+        margin-top: 33px;
+        font-size: 20px;
+        user-select: none;
+        cursor: pointer;
+    }
+    .menu i{
+        font-size: 30px;
+        color: rgb(119, 118, 118)
+    }
+    .menu i:hover{
+        color: black;
+        transition: 0.4s;
+    }
+    .nav-bar{
+        margin: 0 auto;    
+        height: 100px;
+    }
+    .nav-bar{
+        width: 100%;
+        
+    }
+    .logo-menu{
+        padding: 0 5%;
+        width: 100%;
+        height: 90px;
+        border-bottom: 0;
+    }
+    .nav{
+        width: 50%;
+        justify-content: right;
+        float: right;
+        display: none;
+    }
+    .nav-mobile{
+        display: flex;
+        width: 100%;
+        
+    }
+    .nav-mobile ul{
+        list-style-type: none;
+        width: 100%;
+
+    }
+    .nav-mobile ul li{
+        height: 50px;
+        border-bottom: 1px solid rgba(51, 51, 51, 0.205);
+        width: 100%;
+        margin: 0 2px;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 8px;
+    
+    }
+    .nav-mobile ul li a{
+        text-decoration: none;
+        color: rgb(119, 118, 118);
+        height: 100%;
+    }
+    .nav-mobile ul li:hover a{
+        cursor: pointer;
+        color: black;
+        transition: 0.35s;
+
+    }
+    .nav-mobile .active{ 
+        background-color: rgb(53, 199, 53); 
+        color: white;
+    }
+    .nav-mobile .active:hover {
+        color: rgb(241, 235, 235); 
+        cursor: pointer;
+        transition: 0.2s;
+    }
 }
