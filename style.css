@@ -4,8 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.full-nav{
+    width: 100%;
+    background-color: white;
+}
 .nav-bar{
-    margin: 0 auto;    
+    margin: 0 auto;
     width: 1500px;
     height: 100px;
 }
@@ -106,6 +111,114 @@
     color: white;
     font-size: 25px;
 }
+.news-login{
+    width: 1200px;
+    margin: 30px auto;
+}
+.login-sector{
+    width: 250px;
+    float: right;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login-sector h1{
+    text-align: center;
+    margin: 35px 20px 15px;
+    padding-bottom: 20px;
+    border-bottom: black 1px solid;
+    color: rgb(119, 118, 118);
+    font-weight: 600;
+}
+
+.log-button{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 199, 53);
+    font-size: 30px;
+    font-weight:500;
+    padding: 10px 0px;
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.news-sector{
+    float: left;
+    width: 900px;
+}
+.news-sector > div{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    padding: 15px 0 10px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.news-sector > div h1{
+    color: rgb(70, 69, 69);
+    text-align: center;
+    margin: 0 0 15px;
+    font-size: 40px;
+}
+.news-sector > div img{
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+}
+.news-sector p{
+    padding: 20px;
+    text-align: justify;
+}.news-sector a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 199, 53);
+    font-size: 25px;
+    font-weight:500;
+    padding: 10px 30px;
+    text-align: center;
+    width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 15px;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.icon{
+    width: 50px;
+    margin: 5px;
+}
+.footer{
+    background-color: #282E3E;
+    width: 100%;
+    display: flex;
+}
+.logo-footer{
+    float: left;
+    margin-top: 15px;
+    user-select: none;
+    margin: 30px 0 30px 60px;
+}
+.logo-footer img{
+    float: left;
+    border-radius: 10px;
+}
+.logo-footer h1{
+    margin: 0 0 0 80px;
+    font-weight: 500;
+    color: white;
+}
+.logo-footer p{
+    margin: 2px 0 0 80px;
+    font-weight: 500;
+    color: white;
+}
 @media only screen and (max-width: 1501px){
     .nav-bar{  
         width: 90%;
@@ -117,6 +230,41 @@
     .nav{
         width: auto;
         float: right;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .news-login{
+        width: 1000px;
+        margin: 30px auto;
+        display: block;
+
+    }
+    .news-sector{
+        float: none;
+        width: 900px;
+        margin: 0 auto 50px;
+    }
+    .login-sector{
+        width: 900px;
+        padding: 1px;
+        margin-bottom: 50px;
+        float: none;
+        margin: 0 auto 50px;
+    }
+    .sec{
+        width: 50%;
+        float: left;
+    }
+    
+    .log-button{
+        width: 42%;
+        margin: 0 4% 30px;
+        float: left;
+    }
+    .first-log{
+        width: 45%;
+        margin: 10px auto;
+        float: none;
     }
 }
 @media only screen and (max-width: 1201px){
@@ -195,5 +343,59 @@
         color: rgb(241, 235, 235); 
         cursor: pointer;
         transition: 0.2s;
+    }
+}
+@media only screen and (max-width: 1021px){
+    .news-login{
+        width: 100%;
+        margin: 30px auto;
+        display: block;
+    }
+    .news-sector{
+        width: 90%;
+    }
+    .news-sector > div img{
+        height: 200px;
+    }
+    .login-sector{
+        width: 90%;
+        padding: 1px;
+        margin-bottom: 50px;
+        float: none;
+        margin: 0 auto 50px;
+    }
+    .sec{
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+
+@media only screen and (max-width: 601px){
+    .logo-footer{
+        margin: 30px auto;
+    }
+    .news-sector{
+        width: 95%;
+    }
+    .news-sector img{
+    }
+    .login-sector{
+        width: 95%;
+        padding: 1px;
+        margin-bottom: 50px;
+        float: none;
+        margin: 0 auto 50px;
+    }
+    .sec{
+        width: 95%;
+        margin: 0 auto;
+        float: none;
+    }
+    .log-button{
+        float: none;
+        margin: 20px auto;
+        width: 200px;
     }
 }
