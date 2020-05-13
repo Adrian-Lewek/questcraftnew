@@ -4,11 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    overflow: scroll;
-    overflow-x:hidden;
-    
-}
 p{
     font-size: 18px;
 }
@@ -254,6 +249,7 @@ p{
     width: 1200px;
     margin: 0 auto 30px;
     text-align: center;
+    min-height: calc(100vh - 400px - 189px);
 }
 .sector h1{
     margin: 35px 0 7px;
@@ -261,10 +257,10 @@ p{
 }
 .sector p {
     font-size: 32;
-    margin: 6px 0;
+    margin: 10px 0;
 }
 .under-title{
-    width: 80px;
+    width: 50px;
     height: 2px;
     margin: 0 auto 20px;
     background-color:  rgb(53, 199, 53);
@@ -275,7 +271,7 @@ p{
     width: 550px;
     margin: 25px 25px 15px;
     float: left;
-    padding: 15px 0 10px;
+    padding: 0 0 10px;
     border-radius: 20px;
 
 }
@@ -301,6 +297,28 @@ p{
     border-radius: 15px;
 }
 .Games a:hover{
+    background-color: rgb(48, 180, 48);
+    transition: 0.2s;
+}
+.Games h1{
+    margin-bottom: 28px;
+}
+.advanced a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(53, 199, 53);
+    font-size: 25px;
+    font-weight:500;
+    padding: 10px 30px;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 15px;
+    height: 70px;
+    padding-top: 19px;
+}
+.advanced a:hover{
     background-color: rgb(48, 180, 48);
     transition: 0.2s;
 }
@@ -512,5 +530,8 @@ p{
     }
     .Games{
         width: 90%;
+    }.advanced a{
+        width: 200px;
+        padding-top: 5px;
     }
 }
